@@ -90,4 +90,77 @@
 //     phone:34324,
 //     theme:"dark"
 // }
+
+//interfaces
+// interface user{
+//     username:string,
+//     age:number,
+//     phone:number
+// }
+// interface employee extends user{
+//     employeeID:number
+// }
+// const client:user={
+//     username:"john",
+//     age:23,
+//     phone:3434,
+// }
+// const emp:employee={
+//     username:"john",
+//     age:23,
+//     phone:3434,
+//  employeeID:3
+// }
+
+
+//GENERICS
+interface one{
+    id:number,
+    username:string,
+    detail:string
+}
+interface two{
+    id :number,
+    username:string
+}
+interface bette{
+    id:number,
+    username:string,
+    desc:string,
+    extra: one[] | two[]
+}
+interface morebetter <anyword>{
+    id:number,
+    username:string,
+    desc:string,
+    extra:anyword[]
+}
+const checkNow: morebetter<String>={
+    id:34,
+    username:"Ali",
+    desc:"as",
+    extra :["sdfs","always string "]
+}
+interface practice <anyword extends object>{
+    id:number,
+    username:string,
+    detail:string,
+    extra:anyword[]
+}
+// const checkNow2: practice<{id:number ,useranme:string}>={
+    const checkNow2: practice<two>={
+
+    id:34,
+    username:"Ali",
+    detail:"as",
+    extra :[{id:1 , username:"sds"}]
+}
+
+const checkNow3: practice<one>={
+
+    id:34,
+    username:"Ali",
+    detail:"as",
+    extra :[{id:1 , username:"sds" , detail:"s"}]
+}
 export {}

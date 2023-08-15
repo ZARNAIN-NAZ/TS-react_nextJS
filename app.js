@@ -11,12 +11,14 @@
 // };
 // user.name = "mahad";
 Object.defineProperty(exports, "__esModule", { value: true });
-var write = function (num, str) {
-    console.log(num + 'times', str);
+var client = {
+    username: "john",
+    age: 23,
+    phone: 3434,
 };
-var help = {
-    username: "par",
-    age: 3,
-    phone: 34324,
-    theme: "dark"
+var emp = {
+    username: "john",
+    age: 23,
+    phone: 3434,
+    employeeID: 3
 };
