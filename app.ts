@@ -44,7 +44,50 @@
 // // it dont return anything
 // };
 
-let Sum=(num1:number , num2:number)=>{
-    return num1+ num2
-}
-Sum(3,3)
+// let Sum=(num1:number , num2:number):number=>{
+//     return num1+ num2
+    
+// }
+// Sum(3,3)
+
+// let func = (
+//     user:{
+//  username:string,
+//  age:number,
+//  phone?:number
+// })=>[
+//     console.log(user.username)
+    
+// ]
+
+//type aliases
+// type userType={
+//  username:string,
+//  age:number,
+//  phone?:number
+// }
+// let better = (user:userType)=>{
+//     console.log(user.username);
+    
+// }same us uppperone but with type aliases
+
+//build prototype
+// type myfunc= (a:number , b:string)=>void
+
+// let write : myfunc = (num,str)=>{
+//     console.log(num +'times' ,str); 
+// }
+
+// type userType2 ={
+//     username:string,
+//     age:number,
+//     phone?:number,
+//     theme: "dark" | "light"
+// }
+// const help :userType2={
+//     username:"par",
+//     age:3,
+//     phone:34324,
+//     theme:"dark"
+// }
+export {}
